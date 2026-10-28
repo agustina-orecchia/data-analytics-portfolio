@@ -10,10 +10,10 @@ The federal Cheaper Home Batteries Program has subsidised more than half a milli
 |---|---|
 | Batteries installed nationally, Jul 2025 – Sep 2026 | **546,789** (Queensland: 110,578) |
 | High-renter vs low-renter postcodes | **66.8 vs 99.3** batteries per 1,000 houses (**33% fewer**) |
-| Effect of +10 points renter share, controlling for socio-economic status | **−11% to −15%** uptake |
+| Effect of +10 points renter share, controlling for socio-economic status | **-11% to -15%** uptake |
 | Socio-economic deciles where renter-heavy postcodes trail | **8 of 10** |
-| Effect of +10 points **social housing** share | **−28%** uptake |
-| Effect of +10 points **private rental** share | **−7%** uptake |
+| Effect of +10 points **social housing** share | **-28%** uptake |
+| Effect of +10 points **private rental** share | **-7%** uptake |
 
 Renting matters on its own: within the same SEIFA decile, postcodes where more houses are rented install fewer batteries in 8 of 10 deciles. A tenant can't install a battery on a home they don't own, and landlords have little incentive when the tenant pays the power bill (the split-incentive problem).
 
@@ -23,9 +23,9 @@ Splitting renters by landlord type shows the gap is steepest in **social housing
 
 | Renter type (share of separate houses) | Mean share | Effect of +10 points | 90% interval |
 |---|---|---|---|
-| Private rentals (agent or private landlord) | 19.6% | −6.9% | −14.5% to −1.5% |
-| Social housing (state or community) | 2.7% | −28.3% | −37.5% to −22.7% |
-| Group households (shared houses) | 3.7% | −3.9% | −17.5% to +16.7% |
+| Private rentals (agent or private landlord) | 19.6% | -6.9% | -14.5% to -1.5% |
+| Social housing (state or community) | 2.7% | -28.3% | -37.5% to -22.7% |
+| Group households (shared houses) | 3.7% | -3.9% | -17.5% to +16.7% |
 
 Shared houses, the closest Census proxy for room-by-room renting, show no clear effect. They are rare and overlap heavily with private rental areas, so the data can't separate them, and informal room rentals are poorly captured by the Census.
 
@@ -45,7 +45,7 @@ The monthly series also shows a rush in April 2026 (87,128 installs, the highest
 2. **Validate the join:** reproduce the Australian Energy Council's published national split (41.0% of installs in SEIFA deciles 8–10, 17.8% in deciles 1–3). This analysis gets 41.3% and 17.9%.
 3. **Compare like with like:** within each SEIFA decile, compare postcodes below and above that decile's median renter share.
 4. **Estimate the effect:** weighted regression of log uptake on renter share and standardised IRSAD, weighted by number of houses.
-5. **Test robustness:** re-run without postcodes above 50% renters (mostly remote communities and mining towns). The effect holds at −11%.
+5. **Test robustness:** re-run without postcodes above 50% renters (mostly remote communities and mining towns). The effect holds at -11%.
 6. **Decompose renters:** split renter share into private rentals, social housing and group households (Census tables G37 and G42), with 90% intervals from 1,000 bootstrap resamples.
 
 ## Validation checks
