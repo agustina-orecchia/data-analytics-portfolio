@@ -2,7 +2,7 @@
 
 ![Battery rebate uptake vs renters, Queensland](images/battery_rebate_equity_qld.png)
 
-The federal Cheaper Home Batteries Program has subsidised more than half a million home batteries since July 2025. Earlier analysis showed uptake skews towards wealthier areas. This project asks a question that analysis left open: **do renters miss out, even at the same income level?**
+The federal Cheaper Home Batteries Program has subsidised more than half a million home batteries since July 2025. Earlier analysis showed uptake skews towards wealthier areas. This project asks a question that analysis left open: **do postcodes with more renters miss out, even at the same socio-economic level?**
 
 ## Key findings (Queensland, 296 postcodes)
 
@@ -12,14 +12,15 @@ The federal Cheaper Home Batteries Program has subsidised more than half a milli
 | High-renter vs low-renter postcodes | **66.8 vs 99.3** batteries per 1,000 houses (**33% fewer**) |
 | Effect of +10 points renter share, controlling for socio-economic status | **-11% to -15%** uptake |
 | Socio-economic deciles where renter-heavy postcodes trail | **8 of 10** |
-| Effect of +10 points **social housing** share | **-28%** uptake |
-| Effect of +10 points **private rental** share | **-7%** uptake |
+| Gap in **social housing** vs **private rentals** | **~4× steeper** (-28% vs -7% per 10 points) |
 
 Renting matters on its own: within the same SEIFA decile, postcodes where more houses are rented install fewer batteries in 8 of 10 deciles. A tenant can't install a battery on a home they don't own, and landlords have little incentive when the tenant pays the power bill (the split-incentive problem).
 
 ### Which renters?
 
-Splitting renters by landlord type shows the gap is steepest in **social housing** (state and community housing), where uptake falls 28% for every 10 more points of social housing, compared with 7% for private rentals. Social housing is only 2.7% of Queensland houses on average, so it drives a deep gap in a small number of postcodes, while private renting drives a smaller gap across many more.
+Splitting renters by landlord type shows the gap is roughly **four times steeper in social housing** (state and community housing providers) than in private rentals. Social housing is only 2.7% of Queensland houses on average, so per-10-point effects for it extrapolate beyond what most postcodes see: it drives a deep gap in a small number of postcodes, while private renting drives a smaller gap across many more.
+
+**Who could act on this:** for energy retailers and virtual power plant operators, renters are a large group the scheme isn't reaching; for state and community housing providers, their own housing stock is the most direct lever.
 
 | Renter type (share of separate houses) | Mean share | Effect of +10 points | 90% interval |
 |---|---|---|---|
