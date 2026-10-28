@@ -25,6 +25,7 @@ import numpy as np
 import openpyxl
 
 G37_PATH = "2021 Census GCP Postal Areas for AUS/2021Census_G37_AUST_POA.csv"
+G42_PATH = "2021 Census GCP Postal Areas for AUS/2021Census_G42_AUST_POA.csv"
 MIN_HOUSES = 500  # drop small postcodes where rates are unstable
 
 
@@ -72,8 +73,19 @@ def load_census(zip_path):
             out[pc] = {
                 "houses": int(r["Total_DS_Sep_house"]),
                 "rented_houses": int(r["R_Tot_DS_Sep_house"]),
+                # Social housing: state housing authority + community housing provider
+                "social_houses": int(r["R_ST_h_auth_DS_Sep_house"]) + int(r["R_Com_Hp_DS_Sp_ho"]),
+                # Private rentals: real estate agent + private landlord not in the household
+                "private_houses": int(r["R_RE_Agt_DS_Sep_house"]) + int(r["R_Psn_not_in_s_hh_DS_Sep_hous"]),
                 "dwellings": int(r["Total_Total"]),
             }
+        # Group households (unrelated adults sharing) living in separate houses, table G42
+        text = io.TextIOWrapper(z.open(G42_PATH), encoding="utf-8")
+        for r in csv.DictReader(text):
+            pc = r["POA_CODE_2021"].replace("POA", "")
+            if pc in out:
+                out[pc]["group_houses"] = int(r["SH_Group_H"])
+                out[pc]["occupied_houses"] = int(r["SH_Tot"])
     return out
 
 
@@ -152,6 +164,32 @@ def main(battery_csv, census_zip, seifa_xlsx):
           f"{renter_effect(qld):.1f}%")
     print(f"Robustness, excluding postcodes above 50% renters: "
           f"{renter_effect([r for r in qld if r['renter_share'] <= 0.5]):.1f}%")
+
+    # Which renters? Split renter share into private rentals, social housing and
+    # group households, with 90% bootstrap intervals.
+    rate = np.log(np.array([r["per_1000_houses"] for r in qld]) + 1)
+    irsad = np.array([r["irsad"] for r in qld])
+    parts = {
+        "Private rental share": np.array([r["private_houses"] / r["houses"] for r in qld]),
+        "Social housing share": np.array([r["social_houses"] / r["houses"] for r in qld]),
+        "Group household share": np.array([r["group_houses"] / max(r["occupied_houses"], 1)
+                                           for r in qld]),
+    }
+    X = np.column_stack([np.ones(len(qld)), *parts.values(), (irsad - irsad.mean()) / irsad.std()])
+    w = np.sqrt([r["houses"] for r in qld])
+    beta, *_ = np.linalg.lstsq(X * w[:, None], rate * w, rcond=None)
+    rng = np.random.default_rng(0)
+    boot = []
+    for _ in range(1000):
+        i = rng.integers(0, len(qld), len(qld))
+        b, *_ = np.linalg.lstsq(X[i] * w[i, None], rate[i] * w[i], rcond=None)
+        boot.append(b)
+    lo, hi = np.percentile(boot, [5, 95], axis=0)
+    pct = lambda v: 100 * (np.exp(v * 0.10) - 1)
+    print("\nWhich renters? Effect of +10 points, controlling for SEIFA (90% interval):")
+    for k, (name, values) in enumerate(parts.items(), start=1):
+        print(f"  {name} (mean {100 * values.mean():.1f}%): {pct(beta[k]):+.1f}% "
+              f"({pct(lo[k]):+.1f}% to {pct(hi[k]):+.1f}%)")
 
     with open("data/qld_postcode_dataset.csv", "w", newline="") as f:
         cols = ["postcode", "batteries", "houses", "rented_houses", "renter_share",
