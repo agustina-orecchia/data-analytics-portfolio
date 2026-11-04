@@ -12,6 +12,7 @@ Analysis projects built on public Australian data, covering health, energy and p
 |---|---|---|
 | [Queensland flu season forecast](qld-flu-season-forecast/) | When will Queensland's 2027 flu season peak, and what does that mean for vaccination timing in aged care? | Time-series shape analysis, backtesting, ensemble forecast, bootstrap intervals |
 | [Home battery rebate and renters](home-battery-rebate-equity/) | Are renters being left behind by the Cheaper Home Batteries rebate, even at the same income level? | Multi-source joins, validation against published figures, within-group comparison, weighted regression |
+| [Water fluoridation in regional Queensland](qld-water-fluoridation/) | Do councils that stopped fluoridating show more dental hospitalisations, and what else drives the variation? | Mesh block allocation, exposure reconciliation, fixed effects, variance decomposition, waiting list trends |
 
 ## Approach
 

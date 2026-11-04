@@ -1,0 +1,165 @@
+reporting_year,state,sa3_code,sa3_name,pph_rate_asr,pph_rate_crude,pph_count
+2021–22,Qld,30101,"Capalaba",292,286,212
+2021–22,Qld,30102,"Cleveland - Stradbroke",276,267,255
+2021–22,Qld,30103,"Wynnum - Manly",234,232,172
+2021–22,Qld,30201,"Bald Hills - Everton Park",341,334,157
+2021–22,Qld,30202,"Chermside",343,334,252
+2021–22,Qld,30203,"Nundah",263,242,106
+2021–22,Qld,30204,"Sandgate",272,265,164
+2021–22,Qld,30301,"Carindale",384,377,208
+2021–22,Qld,30302,"Holland Park - Yeronga",286,263,212
+2021–22,Qld,30303,"Mt Gravatt",240,240,194
+2021–22,Qld,30304,"Nathan",279,278,112
+2021–22,Qld,30305,"Rocklea - Acacia Ridge",223,219,153
+2021–22,Qld,30306,"Sunnybank",176,172,87
+2021–22,Qld,30401,"Centenary",361,349,116
+2021–22,Qld,30402,"Kenmore - Brookfield - Moggill",465,455,219
+2021–22,Qld,30403,"Sherwood - Indooroopilly",274,265,145
+2021–22,Qld,30404,"The Gap - Enoggera",391,386,213
+2021–22,Qld,30501,"Brisbane Inner",244,199,179
+2021–22,Qld,30502,"Brisbane Inner - East",325,307,138
+2021–22,Qld,30503,"Brisbane Inner - North",305,281,286
+2021–22,Qld,30504,"Brisbane Inner - West",358,343,209
+2021–22,Qld,30601,"Cairns - North",306,327,192
+2021–22,Qld,30602,"Cairns - South",302,316,338
+2021–22,Qld,30603,"Innisfail - Cassowary Coast",410,428,153
+2021–22,Qld,30604,"Port Douglas - Daintree",395,363,45
+2021–22,Qld,30605,"Tablelands (East) - Kuranda",432,432,188
+2021–22,Qld,30701,"Darling Downs (West) - Maranoa",563,560,250
+2021–22,Qld,30702,"Darling Downs - East",607,587,255
+2021–22,Qld,30703,"Granite Belt",610,566,238
+2021–22,Qld,30801,"Central Highlands (Qld)",477,489,143
+2021–22,Qld,30803,"Rockhampton",669,642,792
+2021–22,Qld,30804,"Biloela",549,531,78
+2021–22,Qld,30805,"Gladstone",444,439,283
+2021–22,Qld,30901,"Broadbeach - Burleigh",531,475,320
+2021–22,Qld,30902,"Coolangatta",462,429,250
+2021–22,Qld,30903,"Gold Coast - North",432,388,272
+2021–22,Qld,30904,"Gold Coast Hinterland",341,333,68
+2021–22,Qld,30905,"Mudgeeraba - Tallebudgera",474,483,177
+2021–22,Qld,30906,"Nerang",430,428,302
+2021–22,Qld,30907,"Ormeau - Oxenford",379,391,641
+2021–22,Qld,30908,"Robina",392,382,209
+2021–22,Qld,30909,"Southport",448,429,281
+2021–22,Qld,30910,"Surfers Paradise",535,468,215
+2021–22,Qld,31001,"Forest Lake - Oxley",249,250,201
+2021–22,Qld,31002,"Ipswich Hinterland",355,357,246
+2021–22,Qld,31003,"Ipswich Inner",356,360,428
+2021–22,Qld,31004,"Springfield - Redbank",270,276,301
+2021–22,Qld,31101,"Beaudesert",296,255,38
+2021–22,Qld,31102,"Beenleigh",249,249,118
+2021–22,Qld,31103,"Browns Plains",203,209,203
+2021–22,Qld,31104,"Jimboomba",183,182,117
+2021–22,Qld,31105,"Loganlea - Carbrook",234,233,153
+2021–22,Qld,31106,"Springwood - Kingston",215,215,172
+2021–22,Qld,31201,"Bowen Basin - North",336,330,121
+2021–22,Qld,31202,"Mackay",271,276,342
+2021–22,Qld,31203,"Whitsunday",207,189,45
+2021–22,Qld,31301,"Bribie - Beachmere",504,478,181
+2021–22,Qld,31302,"Caboolture",401,398,328
+2021–22,Qld,31303,"Caboolture Hinterland",391,379,58
+2021–22,Qld,31304,"Narangba - Burpengary",362,360,255
+2021–22,Qld,31305,"Redcliffe",329,306,199
+2021–22,Qld,31401,"The Hills District",352,344,314
+2021–22,Qld,31402,"North Lakes",276,292,265
+2021–22,Qld,31403,"Strathpine",301,296,120
+2021–22,Qld,31501,"Far North",479,524,173
+2021–22,Qld,31502,"Outback - North",445,472,147
+2021–22,Qld,31503,"Outback - South",375,356,62
+2021–22,Qld,31601,"Buderim",441,463,278
+2021–22,Qld,31602,"Caloundra",391,389,384
+2021–22,Qld,31603,"Maroochy",389,375,244
+2021–22,Qld,31605,"Noosa",375,356,168
+2021–22,Qld,31606,"Sunshine Coast Hinterland",371,385,234
+2021–22,Qld,31607,"Nambour",391,384,197
+2021–22,Qld,31608,"Noosa Hinterland",403,389,96
+2021–22,Qld,31701,"Toowoomba",737,747,1231
+2021–22,Qld,31801,"Charters Towers - Ayr - Ingham",276,280,117
+2021–22,Qld,31802,"Townsville",336,343,672
+2021–22,Qld,31901,"Bundaberg",333,291,277
+2021–22,Qld,31902,"Burnett",507,437,220
+2021–22,Qld,31903,"Gympie - Cooloola",284,266,144
+2021–22,Qld,31904,"Hervey Bay",343,289,187
+2021–22,Qld,31905,"Maryborough",420,353,171
+2020–21,Qld,30101,"Capalaba",300,298,223
+2020–21,Qld,30102,"Cleveland - Stradbroke",309,302,284
+2020–21,Qld,30103,"Wynnum - Manly",276,275,204
+2020–21,Qld,30201,"Bald Hills - Everton Park",359,347,161
+2020–21,Qld,30202,"Chermside",373,359,271
+2020–21,Qld,30203,"Nundah",269,258,112
+2020–21,Qld,30204,"Sandgate",290,284,177
+2020–21,Qld,30301,"Carindale",287,283,156
+2020–21,Qld,30302,"Holland Park - Yeronga",274,256,207
+2020–21,Qld,30303,"Mt Gravatt",257,256,206
+2020–21,Qld,30304,"Nathan",260,255,104
+2020–21,Qld,30305,"Rocklea - Acacia Ridge",237,240,164
+2020–21,Qld,30306,"Sunnybank",201,197,102
+2020–21,Qld,30401,"Centenary",367,351,118
+2020–21,Qld,30402,"Kenmore - Brookfield - Moggill",429,441,214
+2020–21,Qld,30403,"Sherwood - Indooroopilly",252,246,138
+2020–21,Qld,30404,"The Gap - Enoggera",369,369,203
+2020–21,Qld,30501,"Brisbane Inner",205,186,166
+2020–21,Qld,30502,"Brisbane Inner - East",340,309,140
+2020–21,Qld,30503,"Brisbane Inner - North",302,278,284
+2020–21,Qld,30504,"Brisbane Inner - West",338,315,195
+2020–21,Qld,30601,"Cairns - North",297,312,182
+2020–21,Qld,30602,"Cairns - South",322,334,358
+2020–21,Qld,30603,"Innisfail - Cassowary Coast",451,446,160
+2020–21,Qld,30604,"Port Douglas - Daintree",202,227,28
+2020–21,Qld,30605,"Tablelands (East) - Kuranda",493,497,215
+2020–21,Qld,30701,"Darling Downs (West) - Maranoa",592,580,260
+2020–21,Qld,30702,"Darling Downs - East",637,608,264
+2020–21,Qld,30703,"Granite Belt",657,622,260
+2020–21,Qld,30801,"Central Highlands (Qld)",496,509,150
+2020–21,Qld,30803,"Rockhampton",662,635,777
+2020–21,Qld,30804,"Biloela",616,581,85
+2020–21,Qld,30805,"Gladstone",424,426,273
+2020–21,Qld,30901,"Broadbeach - Burleigh",442,413,278
+2020–21,Qld,30902,"Coolangatta",373,344,200
+2020–21,Qld,30903,"Gold Coast - North",440,400,281
+2020–21,Qld,30904,"Gold Coast Hinterland",430,414,84
+2020–21,Qld,30905,"Mudgeeraba - Tallebudgera",453,467,170
+2020–21,Qld,30906,"Nerang",390,393,278
+2020–21,Qld,30907,"Ormeau - Oxenford",368,382,602
+2020–21,Qld,30908,"Robina",414,405,221
+2020–21,Qld,30909,"Southport",424,390,255
+2020–21,Qld,30910,"Surfers Paradise",533,480,219
+2020–21,Qld,31001,"Forest Lake - Oxley",313,312,249
+2020–21,Qld,31002,"Ipswich Hinterland",390,385,262
+2020–21,Qld,31003,"Ipswich Inner",427,430,502
+2020–21,Qld,31004,"Springfield - Redbank",313,312,329
+2020–21,Qld,31101,"Beaudesert",192,188,28
+2020–21,Qld,31102,"Beenleigh",272,275,128
+2020–21,Qld,31103,"Browns Plains",265,273,256
+2020–21,Qld,31104,"Jimboomba",246,250,153
+2020–21,Qld,31105,"Loganlea - Carbrook",261,265,173
+2020–21,Qld,31106,"Springwood - Kingston",256,259,209
+2020–21,Qld,31201,"Bowen Basin - North",294,293,106
+2020–21,Qld,31202,"Mackay",302,302,370
+2020–21,Qld,31203,"Whitsunday",240,242,57
+2020–21,Qld,31301,"Bribie - Beachmere",460,401,149
+2020–21,Qld,31302,"Caboolture",424,418,335
+2020–21,Qld,31303,"Caboolture Hinterland",416,422,63
+2020–21,Qld,31304,"Narangba - Burpengary",358,356,249
+2020–21,Qld,31305,"Redcliffe",383,356,229
+2020–21,Qld,31401,"The Hills District",392,388,354
+2020–21,Qld,31402,"North Lakes",315,333,296
+2020–21,Qld,31403,"Strathpine",339,340,137
+2020–21,Qld,31501,"Far North",538,600,199
+2020–21,Qld,31502,"Outback - North",590,652,203
+2020–21,Qld,31503,"Outback - South",295,287,50
+2020–21,Qld,31601,"Buderim",365,373,222
+2020–21,Qld,31602,"Caloundra",345,356,342
+2020–21,Qld,31603,"Maroochy",353,335,215
+2020–21,Qld,31605,"Noosa",371,364,171
+2020–21,Qld,31606,"Sunshine Coast Hinterland",407,398,233
+2020–21,Qld,31607,"Nambour",358,352,176
+2020–21,Qld,31608,"Noosa Hinterland",334,312,76
+2020–21,Qld,31701,"Toowoomba",839,846,1382
+2020–21,Qld,31801,"Charters Towers - Ayr - Ingham",379,367,154
+2020–21,Qld,31802,"Townsville",390,392,766
+2020–21,Qld,31901,"Bundaberg",312,299,282
+2020–21,Qld,31902,"Burnett",416,372,186
+2020–21,Qld,31903,"Gympie - Cooloola",340,303,162
+2020–21,Qld,31904,"Hervey Bay",345,304,193
+2020–21,Qld,31905,"Maryborough",480,410,196

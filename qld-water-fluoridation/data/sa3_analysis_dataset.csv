@@ -1,0 +1,83 @@
+sa3_code,sa3_name,pph_rate,pph_count,years,persons,p_nofl,irsd_x_p,p_major,p_inner,p_outer,p_remote,share_no_fluoride,irsd,share_major,share_inner,share_outer,share_remote,hhs,exposure,band,seq
+30101,Capalaba,296.0,435,2,73359,0,75507827.8,73359,0,0,0,0.0,1029.2919,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30102,Cleveland - Stradbroke,292.5,539,2,93419,0,95661056.0,82742,4909,3600,2168,0.0,1024.0,0.8857,0.0525,0.0385,0.0232,Metro South,Fluoridated,Major city,True
+30103,Wynnum - Manly,255.0,376,2,73002,0,76075384.2,73001,0,2,0,0.0,1042.1,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30201,Bald Hills - Everton Park,350.0,318,2,46064,0,49385214.4,46064,0,0,0,0.0,1072.1,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30202,Chermside,358.0,523,2,74275,0,77691650.0,74275,0,0,0,0.0,1046.0,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30203,Nundah,266.0,218,2,42999,0,44826457.5,42999,0,0,0,0.0,1042.5,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30204,Sandgate,281.0,341,2,61121,0,61524398.6,61121,0,0,0,0.0,1006.6,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30301,Carindale,335.5,364,2,54306,0,58444117.2,54306,0,0,0,0.0,1076.2,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30302,Holland Park - Yeronga,280.0,419,2,79342,0,83920033.4,79342,0,0,0,0.0,1057.7,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30303,Mt Gravatt,248.5,400,2,79446,0,81956493.6,79446,0,0,0,0.0,1031.6,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30304,Nathan,269.5,216,2,39927,0,41575985.1,39927,0,0,0,0.0,1041.3,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30305,Rocklea - Acacia Ridge,230.0,317,2,67942,0,68764098.2,67942,0,0,0,0.0,1012.1,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30306,Sunnybank,188.5,189,2,50177,0,49564840.6,50177,0,0,0,0.0,987.8,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30401,Centenary,364.0,234,2,33051,0,35764487.1,33051,0,0,0,0.0,1082.1,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30402,Kenmore - Brookfield - Moggill,447.0,433,2,47789,0,52821181.7,47438,351,0,0,0.0,1105.3,0.9927,0.0073,0.0,0.0,Metro North,Fluoridated,Major city,True
+30403,Sherwood - Indooroopilly,263.0,283,2,54306,0,58031391.6,54306,0,0,0,0.0,1068.6,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30404,The Gap - Enoggera,380.0,416,2,54186,0,57724345.8,54153,33,0,0,0.0,1065.3,0.9994,0.0006,0.0,0.0,Metro North,Fluoridated,Major city,True
+30501,Brisbane Inner,224.5,345,2,87438,0,90874313.4,87438,0,0,0,0.0,1039.3,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30502,Brisbane Inner - East,332.5,278,2,44377,0,48033664.8,44377,0,0,0,0.0,1082.4,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+30503,Brisbane Inner - North,303.5,570,2,100101,0,107838807.3,100101,0,0,0,0.0,1077.3,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30504,Brisbane Inner - West,348.0,404,2,60234,0,66106815.0,60234,0,0,0,0.0,1097.5,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+30601,Cairns - North,301.5,374,2,57675,57675,59722462.5,0,0,57675,0,1.0,1035.5,0.0,0.0,1.0,0.0,Cairns and Hinterland,Not fluoridated,Outer regional & remote,False
+30602,Cairns - South,312.0,696,2,105439,105439,100377928.0,0,0,105439,0,1.0,952.0,0.0,0.0,1.0,0.0,Cairns and Hinterland,Not fluoridated,Outer regional & remote,False
+30603,Innisfail - Cassowary Coast,430.5,313,2,35364,35364,31928536.8,0,0,32803,2561,1.0,902.8542,0.0,0.0,0.9276,0.0724,Cairns and Hinterland,Not fluoridated,Outer regional & remote,False
+30604,Port Douglas - Daintree,298.5,73,2,12237,12237,11988588.9,0,0,11604,633,1.0,979.7,0.0,0.0,0.9483,0.0517,Cairns and Hinterland,Not fluoridated,Outer regional & remote,False
+30605,Tablelands (East) - Kuranda,462.5,403,2,42796,42796,40550038.8,0,0,41421,1375,1.0,947.5194,0.0,0.0,0.9679,0.0321,Cairns and Hinterland,Not fluoridated,Outer regional & remote,False
+30701,Darling Downs (West) - Maranoa,577.5,510,2,44291,17159,42515915.2,0,0,31077,13214,0.3874,959.9222,0.0,0.0,0.7017,0.2983,Darling Downs,Mixed,Outer regional & remote,False
+30702,Darling Downs - East,622.0,519,2,42826,0,40830524.6,0,33981,8845,0,0.0,953.405,0.0,0.7935,0.2065,0.0,Darling Downs,Fluoridated,Inner regional,False
+30703,Granite Belt,633.5,498,2,41550,36301,39207740.2,0,28360,13190,0,0.8737,943.6279,0.0,0.6826,0.3174,0.0,Darling Downs,Mixed,Inner regional,False
+30801,Central Highlands (Qld),486.5,293,2,28956,1019,28311858.9,0,0,21521,7435,0.0352,977.7545,0.0,0.0,0.7432,0.2568,Central Queensland,Fluoridated,Outer regional & remote,False
+30803,Rockhampton,665.5,1569,2,121378,121378,117409902.7,0,117670,2625,1083,1.0,967.3079,0.0,0.9695,0.0216,0.0089,Central Queensland,Not fluoridated,Inner regional,False
+30804,Biloela,582.5,163,2,14507,0,14386591.9,0,0,12907,1600,0.0,991.7,0.0,0.0,0.8897,0.1103,Central Queensland,Fluoridated,Outer regional & remote,False
+30805,Gladstone,434.0,556,2,63554,63554,60624160.6,0,53979,9176,398,1.0,953.9,0.0,0.8493,0.1444,0.0063,Central Queensland,Not fluoridated,Inner regional,False
+30901,Broadbeach - Burleigh,486.5,598,2,66375,0,69315412.5,66375,0,0,0,0.0,1044.3,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30902,Coolangatta,417.5,450,2,57526,0,59211511.8,57526,0,0,0,0.0,1029.3,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30903,Gold Coast - North,436.0,553,2,69480,0,68548968.0,69480,0,0,0,0.0,986.6,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30904,Gold Coast Hinterland,385.5,152,2,20106,0,20946864.0,8720,11386,0,0,0.0,1041.8215,0.4337,0.5663,0.0,0.0,Gold Coast,Fluoridated,Inner regional,True
+30905,Mudgeeraba - Tallebudgera,463.5,347,2,36032,0,38020966.4,34751,1281,0,0,0.0,1055.2,0.9644,0.0356,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30906,Nerang,410.0,580,2,69671,0,70883275.4,69671,0,0,0,0.0,1017.4,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30907,Ormeau - Oxenford,373.5,1243,2,158129,0,161829218.6,153602,4527,0,0,0.0,1023.4,0.9714,0.0286,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30908,Robina,403.0,430,2,53918,0,55465446.6,53918,0,0,0,0.0,1028.7,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30909,Southport,436.0,536,2,64519,0,63267331.4,64519,0,0,0,0.0,980.6,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+30910,Surfers Paradise,534.0,434,2,45180,0,45708606.0,45180,0,0,0,0.0,1011.7,1.0,0.0,0.0,0.0,Gold Coast,Fluoridated,Major city,True
+31001,Forest Lake - Oxley,281.0,450,2,78821,0,71939926.7,78821,0,0,0,0.0,912.7,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+31002,Ipswich Hinterland,372.5,508,2,67238,0,64312466.5,4120,63118,0,0,0.0,956.4899,0.0613,0.9387,0.0,0.0,West Moreton,Fluoridated,Inner regional,True
+31003,Ipswich Inner,391.5,930,2,115943,0,110787943.0,115127,816,0,0,0.0,955.538,0.993,0.007,0.0,0.0,West Moreton,Fluoridated,Major city,True
+31004,Springfield - Redbank,291.5,630,2,105176,0,101684156.8,105176,0,0,0,0.0,966.8,1.0,0.0,0.0,0.0,West Moreton,Fluoridated,Major city,True
+31101,Beaudesert,244.0,66,2,14646,0,13401090.0,0,14250,396,0,0.0,915.0,0.0,0.973,0.027,0.0,Metro South,Fluoridated,Inner regional,True
+31102,Beenleigh,260.5,246,2,46296,0,43018243.2,46296,0,0,0,0.0,929.2,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+31103,Browns Plains,234.0,459,2,93616,0,87100326.4,93616,0,0,0,0.0,930.4,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+31104,Jimboomba,214.5,270,2,61649,0,62277819.8,49197,12452,0,0,0.0,1010.2,0.798,0.202,0.0,0.0,Metro South,Fluoridated,Major city,True
+31105,Loganlea - Carbrook,247.5,326,2,64501,0,62436968.0,64501,0,0,0,0.0,968.0,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+31106,Springwood - Kingston,235.5,381,2,79126,0,70999759.8,79126,0,0,0,0.0,897.3,1.0,0.0,0.0,0.0,Metro South,Fluoridated,Major city,True
+31201,Bowen Basin - North,315.0,227,2,35820,13756,35073157.2,0,0,25770,10050,0.384,979.1501,0.0,0.0,0.7194,0.2806,Mackay,Mixed,Outer regional & remote,False
+31202,Mackay,286.5,712,2,121644,121644,121558849.2,0,89827,30840,977,1.0,999.3,0.0,0.7384,0.2535,0.008,Mackay,Not fluoridated,Inner regional,False
+31203,Whitsunday,223.5,102,2,23420,23420,23373160.0,0,0,21967,1453,1.0,998.0,0.0,0.0,0.938,0.062,Mackay,Not fluoridated,Outer regional & remote,False
+31301,Bribie - Beachmere,482.0,330,2,37064,0,35492486.4,14048,23016,0,0,0.0,957.6,0.379,0.621,0.0,0.0,Metro North,Fluoridated,Inner regional,True
+31302,Caboolture,412.5,663,2,79678,0,73391405.8,79678,0,0,0,0.0,921.1,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+31303,Caboolture Hinterland,403.5,121,2,14875,0,14508620.0,0,13716,1159,0,0.0,975.3694,0.0,0.9221,0.0779,0.0,Metro North,Fluoridated,Inner regional,True
+31304,Narangba - Burpengary,360.0,504,2,69255,0,67842198.0,68456,799,0,0,0.0,979.6,0.9885,0.0115,0.0,0.0,Metro North,Fluoridated,Major city,True
+31305,Redcliffe,356.0,428,2,63770,0,61547453.8,63454,0,0,316,0.0,965.1475,0.995,0.0,0.0,0.005,Metro North,Fluoridated,Major city,True
+31401,The Hills District,372.0,668,2,89800,0,97540760.0,77681,12119,0,0,0.0,1086.2,0.865,0.135,0.0,0.0,Metro North,Fluoridated,Major city,True
+31402,North Lakes,295.5,561,2,88021,0,88971626.8,88021,0,0,0,0.0,1010.8,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+31403,Strathpine,320.0,257,2,39874,0,38917024.0,39874,0,0,0,0.0,976.0,1.0,0.0,0.0,0.0,Metro North,Fluoridated,Major city,True
+31501,Far North,508.5,372,2,32190,22523,26429254.0,0,0,4971,27219,0.6997,821.0393,0.0,0.0,0.1544,0.8456,Torres and Cape,Mixed,Outer regional & remote,False
+31502,Outback - North,517.5,350,2,30351,25935,28295194.0,0,0,0,30351,0.8545,932.2656,0.0,0.0,0.0,1.0,North West,Mixed,Outer regional & remote,False
+31503,Outback - South,335.0,112,2,17173,15871,16599322.0,0,0,0,17173,0.9242,966.5942,0.0,0.0,0.0,1.0,Central West,Mixed,Outer regional & remote,False
+31601,Buderim,403.0,500,2,58933,0,61190133.9,58933,0,0,0,0.0,1038.3,1.0,0.0,0.0,0.0,Sunshine Coast,Fluoridated,Major city,True
+31602,Caloundra,368.0,726,2,96327,0,98157213.0,96327,0,0,0,0.0,1019.0,1.0,0.0,0.0,0.0,Sunshine Coast,Fluoridated,Major city,True
+31603,Maroochy,371.0,459,2,63598,0,64863600.2,63598,0,0,0,0.0,1019.9,1.0,0.0,0.0,0.0,Sunshine Coast,Fluoridated,Major city,True
+31605,Noosa,373.0,339,2,46628,0,48416943.4,46628,0,0,0,0.0,1038.3663,1.0,0.0,0.0,0.0,Sunshine Coast,Fluoridated,Major city,True
+31606,Sunshine Coast Hinterland,389.0,467,2,59029,0,60221385.8,13535,45494,0,0,0.0,1020.2,0.2293,0.7707,0.0,0.0,Sunshine Coast,Fluoridated,Inner regional,True
+31607,Nambour,374.5,373,2,50011,0,50096018.7,43186,6825,0,0,0.0,1001.7,0.8635,0.1365,0.0,0.0,Sunshine Coast,Fluoridated,Major city,True
+31608,Noosa Hinterland,368.5,172,2,24172,0,24848816.0,8194,15978,0,0,0.0,1028.0,0.339,0.661,0.0,0.0,Sunshine Coast,Fluoridated,Inner regional,True
+31701,Toowoomba,788.0,2613,2,162124,0,159099277.9,0,162124,0,0,0.0,981.3432,0.0,1.0,0.0,0.0,Darling Downs,Fluoridated,Inner regional,False
+31801,Charters Towers - Ayr - Ingham,327.5,271,2,41403,41403,38627670.7,0,0,33289,8114,1.0,932.9679,0.0,0.0,0.804,0.196,Townsville,Not fluoridated,Outer regional & remote,False
+31802,Townsville,363.0,1438,2,192763,46,190895209.1,0,0,192763,0,0.0002,990.3104,0.0,0.0,1.0,0.0,Townsville,Fluoridated,Outer regional & remote,False
+31901,Bundaberg,322.5,559,2,93741,93741,87038518.5,0,93338,403,0,1.0,928.5,0.0,0.9957,0.0043,0.0,Wide Bay,Not fluoridated,Inner regional,False
+31902,Burnett,461.5,406,2,49665,49655,44229414.5,0,25135,24314,216,0.9998,890.555,0.0,0.5061,0.4896,0.0043,Darling Downs,Not fluoridated,Inner regional,False
+31903,Gympie - Cooloola,312.0,306,2,53169,5,49473922.0,0,50751,2418,0,0.0001,930.5032,0.0,0.9545,0.0455,0.0,Sunshine Coast,Fluoridated,Inner regional,True
+31904,Hervey Bay,344.0,380,2,63503,63503,59407056.5,0,63503,0,0,1.0,935.5,0.0,1.0,0.0,0.0,Wide Bay,Not fluoridated,Inner regional,False
+31905,Maryborough,450.0,367,2,47620,47524,42206345.2,0,46483,381,756,0.998,886.3155,0.0,0.9761,0.008,0.0159,Wide Bay,Not fluoridated,Inner regional,False
