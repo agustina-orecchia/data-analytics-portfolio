@@ -174,7 +174,7 @@ def waiting_summary(wl):
 def chart_pph(d, hhs_rates, path):
     """One row per HHS, one dot per SA3, coloured by water supply status."""
     ink, muted, grid = "#252423", "#605E5C", "#E1DFDD"  # Power BI default theme neutrals
-    colours = {"Fluoridated": "#118DFF", "Mixed": "#744EC2", "Not fluoridated": "#E66C37"}
+    colours = {"Fluoridated": "#01B8AA", "Mixed": "#5F6B6D", "Not fluoridated": "#744EC2"}
     order = hhs_rates.sort_values("pph_rate").index.tolist()
     fig, ax = plt.subplots(figsize=(10, 6.4), dpi=150)
     for i, h in enumerate(order):
@@ -210,7 +210,7 @@ def chart_pph(d, hhs_rates, path):
 
 def chart_ga(trend, latest, path):
     ink, muted, grid = "#252423", "#605E5C", "#E1DFDD"  # Power BI default theme neutrals
-    colours = {"South-east": "#118DFF", "Regional": "#E66C37"}
+    colours = {"South-east": "#01B8AA", "Regional": "#744EC2"}
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(12, 5.2), dpi=150,
                                  gridspec_kw={"width_ratios": [1, 1.15]})
     for reg, g in trend.groupby("region"):
