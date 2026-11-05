@@ -40,6 +40,8 @@ The general anaesthetic (GA) list is where severe dental disease shows up in pub
 
 Wide Bay carries a list of similar size to Cairns and Central Queensland but keeps almost all of it within the clinical target. That makes it the obvious HHS to learn from on GA list management, and a better question for regional oral health services than the fluoride debate alone.
 
+This finding is followed up in a separate [business case for the Metro South GA list](../dental-ga-waitlist-case/).
+
 ## Data
 
 | Source | What | Level |
