@@ -1,0 +1,9 @@
+list_name,list_group,target_months,within_target_bins
+Clinical Assessment,Assessment,1,1
+General,General care,24,2
+Priority 1,Priority,1,1
+Priority 2,Priority,3,1
+Priority 3,Priority,12,2
+General Anaesthetic Category 1,General anaesthetic,1,1
+General Anaesthetic Category 2,General anaesthetic,3,1
+General Anaesthetic Category 3,General anaesthetic,12,2
