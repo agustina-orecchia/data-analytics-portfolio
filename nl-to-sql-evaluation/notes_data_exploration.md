@@ -92,3 +92,4 @@ Consequence [Inferred]:
 | 7.7 | One impossible D7 value (258), see section 4. | [Verified] |
 | 7.8 | General Anaesthetic lists are missing from the 2026 files. | [Verified] |
 | 7.9 | Not published: additions to the list, removals without treatment, patient age group. Questions that need these cannot be answered from this data. | [Verified: no such columns in any file] |
+| 7.10 | The published D7 is wrong in most rows of two files: Waiting D7 in April 2022 (249 of 310 rows) and Treated D7 in May 2022 (115 of 308 rows). In the other 33 files, the within-target rule reproduces D7 in every row. Decision: gold recalculates percentages from D1-D6 and never uses the published D7. | [Verified] |

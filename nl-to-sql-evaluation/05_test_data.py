@@ -1,5 +1,5 @@
 """
-Step 4: data quality tests on bronze and silver.
+Step 5: data quality tests on bronze, silver and gold.
 
 Each test is a SQL query that returns the number of rows breaking a rule.
 - error: the pipeline stops (exit code 1). The data cannot be trusted.
@@ -12,6 +12,7 @@ import duckdb
 DB = "data/waitlist.duckdb"
 
 TESTS = [
+    # Bronze to silver
     {
         "name": "No rows lost between bronze and silver",
         "severity": "error",
@@ -93,6 +94,28 @@ TESTS = [
         "severity": "warn",
         "sql": """SELECT CASE WHEN date_diff('month', MAX(snapshot_date), current_date) > 9
                          THEN 1 ELSE 0 END FROM silver_waitlist""",
+    },
+    # Gold
+    {
+        "name": "Gold fact has one row per silver row",
+        "severity": "error",
+        "sql": """SELECT ABS((SELECT COUNT(*) FROM silver_waitlist)
+                           - (SELECT COUNT(*) FROM fact_waitlist))""",
+    },
+    {
+        "name": "Within target + past target = total waiting",
+        "severity": "error",
+        "sql": """SELECT COUNT(*) FROM fact_waitlist
+                  WHERE waiting_within_target + waiting_past_target <> waiting_total""",
+    },
+    {
+        "name": "Wait bands add up to the fact table",
+        "severity": "error",
+        "sql": """SELECT COUNT(*) FROM (
+                      SELECT f.snapshot_date, f.clinic_id, f.list_name, f.waiting_total
+                      FROM fact_waitlist AS f
+                      JOIN fact_wait_band AS b USING (snapshot_date, clinic_id, list_name)
+                      GROUP BY ALL HAVING f.waiting_total <> SUM(b.waiting))""",
     },
 ]
 
