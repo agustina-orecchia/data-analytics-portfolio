@@ -79,4 +79,10 @@ not_available:
   - New referrals or additions to the list, and removals without treatment.
   - Reasons for waiting, costs, staffing or appointment details.
   - Any data before July 2021.
-    - Medical conditions, diagnoses, disability status or reason for referral. The data has counts of people only, with no patient-level information.
+  - Medical conditions, diagnoses, disability status or reason for referral. The data has counts of people only, with no patient-level information.
+  - Hospital theatre capacity, anaesthetist availability or any other cause of delay. The data shows how long people wait, not why.
+
+background:
+  - Priority lists hold patients assessed as needing treatment sooner because of their oral health need, for example pain or infection. Clinical Assessment is the step that decides this.
+  - General anaesthetic lists usually include young children with extensive decay and people who cannot be treated in the dental chair, for example because of disability.
+  - This is clinical context only. The data does not record any patient characteristics, so it cannot be used to count or label patients by type.

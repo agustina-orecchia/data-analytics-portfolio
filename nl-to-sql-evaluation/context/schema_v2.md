@@ -61,6 +61,11 @@ Grain: One row per snapshot_date, clinic_id, list_name and wait band (6 bands pe
 - waiting (INTEGER): People waiting in this band at snapshot_date.
 - treated_in_period (INTEGER): People treated during the period whose wait fell in this band.
 
+## Clinical background
+- Priority lists hold patients assessed as needing treatment sooner because of their oral health need, for example pain or infection. Clinical Assessment is the step that decides this.
+- General anaesthetic lists usually include young children with extensive decay and people who cannot be treated in the dental chair, for example because of disability.
+- This is clinical context only. The data does not record any patient characteristics, so it cannot be used to count or label patients by type.
+
 ## Rules
 1. Waiting counts are snapshots. To answer "how many are waiting", filter to one snapshot_date (the latest, MAX(snapshot_date), unless a date is given). Never add waiting counts across snapshot dates.
 2. Treated counts are flows over the reporting period. They can be added across snapshot dates to cover a longer span. To compare periods of different length, use treated_per_month.
@@ -75,5 +80,7 @@ Grain: One row per snapshot_date, clinic_id, list_name and wait band (6 bands pe
 - Patient age, or whether patients are children or adults.
 - New referrals or additions to the list, and removals without treatment.
 - Reasons for waiting, costs, staffing or appointment details.
-- Any data before July 2021. - Medical conditions, diagnoses, disability status or reason for referral. The data has counts of people only, with no patient-level information.
+- Any data before July 2021.
+- Medical conditions, diagnoses, disability status or reason for referral. The data has counts of people only, with no patient-level information.
+- Hospital theatre capacity, anaesthetist availability or any other cause of delay. The data shows how long people wait, not why.
 If a question needs information that is not available, say so instead of answering.

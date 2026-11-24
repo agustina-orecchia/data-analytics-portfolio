@@ -57,6 +57,8 @@ def render_v2(schema, dictionary):
         lines += [f"## {table}", info["description"], f"Grain: {info['grain']}", ""]
         lines += [f"- {name} ({dtype}): {info['columns'][name]}" for name, dtype in columns]
         lines.append("")
+    if dictionary.get("background"):
+        lines += ["## Clinical background", *[f"- {item}" for item in dictionary["background"]], ""]
     lines += ["## Rules", *[f"{i}. {rule}" for i, rule in enumerate(dictionary["rules"], 1)], ""]
     lines += ["## Not available in this data", *[f"- {item}" for item in dictionary["not_available"]]]
     lines.append("If a question needs information that is not available, say so instead of answering.")
