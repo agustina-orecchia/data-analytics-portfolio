@@ -1,0 +1,82 @@
+# Semantic layer for the gold tables.
+# Describes what the data means, not what the answers are.
+# Column types are read from the database, so they are not repeated here.
+
+tables:
+  dim_list:
+    description: The eight public dental waiting lists and their clinically recommended waiting times.
+    grain: One row per waiting list.
+    columns:
+      list_name: Name of the waiting list. Join key to the fact tables.
+      list_group: "Group of lists: Assessment, General care, Priority or General anaesthetic."
+      target_months: Clinically recommended maximum wait, in months. Patients waiting longer are past target.
+      list_description: Plain-English description of what the list is for.
+
+  dim_clinic:
+    description: Public dental clinics in Queensland, with the Hospital and Health Service (HHS) they belong to.
+    grain: One row per clinic_id.
+    columns:
+      clinic_id: Stable clinic identifier. Use this, not the name, to identify a clinic over time.
+      clinic_name: Clinic name as shown in the most recent snapshot. Names were sometimes abbreviated or changed in older files.
+      hhs_code: Three-letter code of the Hospital and Health Service (e.g. MST = Metro South).
+      hhs_name: Name of the Hospital and Health Service.
+      is_hhs_level_ga_record: "True for clinic_id 901-915. These are not real clinics: they hold general anaesthetic lists reported for a whole HHS."
+      first_snapshot: First snapshot date in which the clinic appears.
+      last_snapshot: Last snapshot date in which the clinic appears.
+
+  fact_waitlist:
+    description: Waiting list size and patients treated, by snapshot date, clinic and waiting list.
+    grain: One row per snapshot_date, clinic_id and list_name.
+    columns:
+      snapshot_date: Date the waiting list was counted (last day of a month or quarter).
+      period_start: First day of the period that treated_in_period covers.
+      period_months: Length of the reporting period in months. 1 until June 2023 (monthly releases), 3 from July 2023 (quarterly releases).
+      hhs_code: Three-letter code of the Hospital and Health Service.
+      hhs_name: Name of the Hospital and Health Service.
+      clinic_id: Clinic identifier. Join key to dim_clinic.
+      report_level: "'Clinic' for a real clinic. 'HHS' for general anaesthetic lists reported for a whole HHS (clinic_id 901-915)."
+      list_name: Waiting list. Join key to dim_list.
+      list_group: "Group of lists: Assessment, General care, Priority or General anaesthetic."
+      target_months: Clinically recommended maximum wait for this list, in months.
+      waiting_total: People on the waiting list at snapshot_date.
+      waiting_within_target: People waiting who have not yet passed the recommended time.
+      waiting_past_target: People waiting longer than the recommended time.
+      treated_in_period: People treated from the list during the reporting period (period_start to snapshot_date).
+      treated_within_target: People treated during the period who were treated within the recommended time.
+      treated_per_month: treated_in_period divided by period_months. Use this to compare treatment volumes across monthly and quarterly periods.
+      includes_inquiry_status: True for the September 2023 quarter only, when people with an 'Inquiry' status were also counted as waiting. Waiting counts for that snapshot may be slightly higher.
+
+  fact_wait_band:
+    description: Waiting list split by how long people have waited, in months. Same people as fact_waitlist, broken down by wait band.
+    grain: One row per snapshot_date, clinic_id, list_name and wait band (6 bands per list).
+    columns:
+      snapshot_date: Date the waiting list was counted.
+      hhs_code: Three-letter code of the Hospital and Health Service.
+      hhs_name: Name of the Hospital and Health Service.
+      clinic_id: Clinic identifier. Join key to dim_clinic.
+      report_level: "'Clinic' or 'HHS' (see fact_waitlist)."
+      list_name: Waiting list. Join key to dim_list.
+      band_order: Order of the band, 1 (shortest wait) to 6 (longest).
+      months_waited_from: Lower bound of the band, in months (exclusive, except 0).
+      months_waited_to: Upper bound of the band, in months (inclusive). NULL for the last, open-ended band.
+      band_label: Readable label, e.g. '12 to 18 months' or 'over 30 months'.
+      is_past_target: True if everyone in this band has waited longer than the recommended time.
+      waiting: People waiting in this band at snapshot_date.
+      treated_in_period: People treated during the period whose wait fell in this band.
+
+rules:
+  - Waiting counts are snapshots. To answer "how many are waiting", filter to one snapshot_date (the latest, MAX(snapshot_date), unless a date is given). Never add waiting counts across snapshot dates.
+  - Treated counts are flows over the reporting period. They can be added across snapshot dates to cover a longer span. To compare periods of different length, use treated_per_month.
+  - A percentage across several rows is a ratio of sums, e.g. 100.0 * SUM(waiting_past_target) / SUM(waiting_total). Do not average row-level percentages.
+  - Different lists have different targets, so "% past target" is not directly comparable between lists or between groups with a different mix of lists. To compare wait length on equal terms, use fact_wait_band and a fixed number of months (e.g. months_waited_from >= 12).
+  - The 'General' list (routine care, 24-month target) is not the same as the 'General anaesthetic' lists.
+  - General anaesthetic lists are reported per HHS (report_level = 'HHS') from December 2023 to September 2025, and per clinic before and after. Totals by HHS or for Queensland are correct in all periods; clinic-level general anaesthetic figures are not available for that period.
+  - There is no general anaesthetic data after 31 December 2025. For general anaesthetic questions, the latest snapshot is the latest date that has general anaesthetic rows, not the overall latest date.
+  - Dates in questions refer to snapshot_date. A financial year runs 1 July to 30 June; "2024-25" means July 2024 to June 2025.
+
+not_available:
+  - Patient age, or whether patients are children or adults.
+  - New referrals or additions to the list, and removals without treatment.
+  - Reasons for waiting, costs, staffing or appointment details.
+  - Any data before July 2021.
+    - Medical conditions, diagnoses, disability status or reason for referral. The data has counts of people only, with no patient-level information.
